@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Mais Vida</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Instituto Mais Vida</h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">≡</label>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#projetos">Projetos</a>
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle">
+                <label for="dropdown-toggle" class="dropdown-toggle">Como ajudar ▼</label> 
+                <div class="dropdown-menu">
+                    <a href="#doacao">Faça uma doação</a>
+                    <a href="#voluntariado">Seja voluntário</a>
+                    <a href="#divulgacao">Divulgue nosso trabalho</a>
+                </div>
+            </div>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>O instituto Mais Vida trabalha para promover ações sociais e contibuir para uma sociedade mais justa e solidária.</p>
+            <img src="../imagens/FB866461-0E12-4367-85FC-C932653B22D1.PNG" alt="Voluntários do Instituto Mais Vida entregando marmitas">
+        </section>
+        <section id="missao">
+            <h2>Nossa missão</h2>
+            <p>Nossa missão é promover ações sociais, combater a fome e contribuir para uma sociedade mais justa e solidária.</p>
+            <ul>
+                <li><strong>Acolher:</strong> apoiar pessoas e famímilias em situação de vulnerabilidade.</li>
+                <li><strong>Transformar:</strong> promover ações que gerem impacto social positivo.</li>
+                <li><strong>Inspirar:</strong> incentivar a solidariedade e o voluntariado.</li>
+            </ul>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <h3>Distribuição de marmitas</h3>
+            <span class="badge">Projeto ativo</span>
+            <div class="alert" role="status">
+                <strong>Projeto ativo:</strong> a distribuição de marmitas está recebendo doações.
+            </div>
+            <p>Nosso projeto de distribuição de marmitas oferece refeições para pessoas em situação de vulnerabilidade social.</p>
+            <ul id="lista-projetos"></ul> 
+            <div class="modal" role="dialog" arial-labelledby="titulo-modal">
+                <div class="modal-conteudo">
+                    <h3 id="titulo-modal">Informações do projeto</h3>
+                    <p>Este projeto busca contribuir para a alimentação e o bem-estar de pessoas em situação de vulnerabilidade social.</p>
+                    <p>As doações ajudam na arrecadação de alimentos e recursos necessários para a continuidade das ações.</p>
+                    <button type="button">Fechar</button>
+                </div>
+            </div>  
+        </section>
+        <section id="como-ajudar">
+            <h2>Como ajudar</h2>
+            <p>Existem várias maneiras de contribuir com o Instituto Mais Vida:</p>
+            <ul>
+                <li><strong>Faça uma doação:</strong> contribua com alimentos, recursos ou itens essenciais.</li>
+                <li><strong>Seja voluntário:</strong> participe das nossas ações e ajude a transformar vidas.</li>
+                <li><strong>Divulgue nosso trabalho:</strong> compartilhe nossas ações com seus amigos e familiares.</li>
+            </ul>
+        </section>
+        <section id="doacao">
+            <h2>Faça uma doação</h2>
+            <p>Sua contribuição ajuda o Instituto Mais Vida a continuar realizando ações sociais.</p>
+            <button type="button" id="botao-doacao">Fazer uma doação</button>
+            <form id="form-doacao" style="display: none;">
+                <label for="nome-doacao">Nome:</label>
+                <input type="text" id="nome-doacao" name="nome" required>
+                <label for="email-doacao">E-mail:</label>
+                <input type="email" id="email-doacao" name="email" required>
+                <label for="valor-doacao">Valor da doação:</label>
+                <input type="number" id="valor-doacao" name="valor" min="1" step="0.01" required>
+                <button type="submit">Confirmar doação</button> 
+            </form>
+        </section>
+        <section id="voluntariado">
+            <h2>Seja voluntário</h2>
+            <p>Participe das ações do Instituto mais vida e ajude a transformar vidas.</p>
+        </section>
+        <section id="divulgacao">
+            <h2>Divulgue nosso trabalho</h2>
+            <p>Compartilhe nossas ações com seus amigos e familiares e ajude o Instituto Mais Vida a alcançar mais pessoas.</p>
+        </section>
+        <section id="contato">
+            <h2>Entre em contato</h2>
+            <p>Preencha o formulário abaixo para falar com o Instituto Mais Vida.</p>
+            <p><strong>E-mail:</strong> contato@institutomaisvida.org</p>
+            <p><strong>Telefone:</strong> (19) 00000-0000</p>
+            <p><strong>WhatsApp:</strong> (19) 00000-0000</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label> 
+                <input type="email" id="email" name="email" required> 
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5"></textarea> 
+                <button type="submit">Enviar mensagem</button>
+            </form>            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Instituto Mais Vida. Todos os direitos reservados.</p>
+        <p>E-mail: contato@institutomaisvida.org</p>
+    </footer>
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>
