@@ -169,6 +169,7 @@ section ul {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
     border-left: 4px solid var(--cor-principal);
+    line-height: 1.5;
 }
 #como-ajudar li strong {
     display: block;
