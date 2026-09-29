@@ -29,4 +29,14 @@ ONG/
     ├── cadastro.js
     ├── navegacao.js
     ├── projetos.js
-    └── script.js
+    └── script.js 
+    
+## Como executar
+
+Para executar o projeto localmente, clone o repositório do GitHub, abra a pasta no VS Code e utilize o Live Server para abrir o arquivo index.html no navegador.
+
+## Versionamento
+
+O projeto utiliza Git e GitHub para controle de versão. Foram utilizadas branches para organizar as alterações, commits descritivos para registrar as mudanças e pull requests para integrar as alterações ao projeto.    
+    
+    
