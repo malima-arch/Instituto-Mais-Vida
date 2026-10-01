@@ -5,6 +5,15 @@
     --cor-texto: #333333;
     --cor-branca: #ffffff;
 }
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-fundo: #121212;
+        --cor-texto: #f5f5f5;
+        --cor-branca: #1e1e1e;
+        --cor-principal: #66bb6a;
+        --cor-secundaria: #a5d6a7;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -169,6 +178,7 @@ section ul {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
     border-left: 4px solid var(--cor-principal);
+    line-height: 1.5;
 }
 #como-ajudar li strong {
     display: block;
@@ -392,4 +402,12 @@ textarea:focus:invalid {
 .sucesso {
     border: 2px solid #2e7d32;
     background-color: #e8f5e9;
+}
+/* Ajuste do formulário de cadastro */
+main > h2 {
+    grid-column: span 12;
+}
+main > form {
+    grid-column: span 12;
+    width: 100%;
 }
