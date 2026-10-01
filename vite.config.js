@@ -3,7 +3,7 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: "html/inde.html",
+                main: "html/index.html",
                 cadastro: "html/cadastro.html"
             }
         }
